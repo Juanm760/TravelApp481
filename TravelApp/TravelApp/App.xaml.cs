@@ -5,6 +5,7 @@ using System.Text;
 using Prism;
 using Prism.Ioc;
 using Prism.Unity;
+using TravelApp.Views;
 using Xamarin.Forms;
 
 namespace TravelApp
@@ -20,16 +21,17 @@ namespace TravelApp
 
         public App(IPlatformInitializer initializer = null) : base(initializer) { }
 
-        protected override void OnInitialized()
+        protected override async void OnInitialized()
         {
             InitializeComponent();
-            NavigationService.NavigateAsync(nameof(MainPage));
+            await NavigationService.NavigateAsync("MainPage");
         }
 
         protected override void RegisterTypes(Prism.Ioc.IContainerRegistry containerRegistry)
         {
-            containerRegistry.RegisterForNavigation<MainPage, TravelAppPageViewModel>();
-            //containerRegistry.RegisterForNavigation <TravelAppPage, TravelAppPageViewModel>();
+            //containerRegistry.RegisterForNavigation<NavigationPage>();
+            //   containerRegistry.RegisterForNavigation<MainPage, TravelAppPageViewModel>();
+            containerRegistry.RegisterForNavigation<MainPage>();
         }
 
         protected override void OnStart ()

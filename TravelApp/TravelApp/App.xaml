@@ -5,8 +5,29 @@
     xmlns:prism="clr-namespace:Prism.Unity;assembly=Prism.Unity.Forms"
     x:Class="TravelApp.App">
 	<Application.Resources>
-
 		<!-- Application resource dictionary -->
-
+        <ResourceDictionary>
+            <Style x:Key="AppButtonStyle" TargetType="Button">
+                <Setter Property="HorizontalOptions" Value="Fill" />
+                <Setter Property="VerticalOptions" Value="Center" />
+                <Setter Property="BackgroundColor" Value="Transparent" />
+                <Setter Property="BorderColor" Value="Silver" />
+                <Setter Property="BorderWidth" Value="1" />
+                <Setter Property="FontAttributes" Value="Bold" />
+            </Style>
+            <Style x:Key="HeaderStyle" TargetType="Label">
+                <Setter Property="BackgroundColor" Value="Black" />
+                <Setter Property="HorizontalTextAlignment" Value="Center" />
+                <Setter Property="VerticalTextAlignment" Value="Center" />
+                <Setter Property="HeightRequest" Value="30" />
+                <Setter Property="FontAttributes" Value="Bold" />
+                <Setter Property="FontSize" Value="Large" />
+                <Setter Property="TextColor" Value="White" />
+            </Style>
+            <Style x:Key="StandardSpacer" TargetType="BoxView">
+                <Setter Property="Color" Value="Transparent" />
+                <Setter Property="HeightRequest" Value="50" />
+            </Style>
+        </ResourceDictionary>
 	</Application.Resources>
 </prism:PrismApplication>

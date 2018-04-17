@@ -11,7 +11,7 @@
 namespace TravelApp {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\TravelApp\\TravelApp\\TravelApp\\App.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\CS481PRJOECT\\TravelApp\\TravelApp\\App.xaml")]
     public partial class App : global::Prism.Unity.PrismApplication {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]

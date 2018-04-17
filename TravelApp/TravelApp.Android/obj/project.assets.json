@@ -827,11 +827,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\TravelApp\\TravelApp\\TravelApp.Android\\TravelApp.Android.csproj",
+      "projectUniqueName": "C:\\CS481PRJOECT\\TravelApp\\TravelApp.Android\\TravelApp.Android.csproj",
       "projectName": "TravelApp.Android",
-      "projectPath": "C:\\TravelApp\\TravelApp\\TravelApp.Android\\TravelApp.Android.csproj",
+      "projectPath": "C:\\CS481PRJOECT\\TravelApp\\TravelApp.Android\\TravelApp.Android.csproj",
       "packagesPath": "C:\\Users\\llaca\\.nuget\\packages\\",
-      "outputPath": "C:\\TravelApp\\TravelApp\\TravelApp.Android\\obj\\",
+      "outputPath": "C:\\CS481PRJOECT\\TravelApp\\TravelApp.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [

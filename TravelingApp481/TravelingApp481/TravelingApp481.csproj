@@ -7,11 +7,18 @@
   <ItemGroup>
     <PackageReference Include="Prism.Unity.Forms" Version="7.0.0.396" />
     <PackageReference Include="Xamarin.Forms" Version="2.5.0.280555" />
+    <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
   </ItemGroup>
 
   <ItemGroup>
     <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="App.xaml.cs">
       <DependentUpon>*.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\TabPageB.xaml.cs">
+      <DependentUpon>TabPageB.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\TabPageC.xaml.cs">
+      <DependentUpon>TabPageC.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
 

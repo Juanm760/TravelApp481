@@ -1,13 +1,17 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+             ios:Page.UseSafeArea="true"
              xmlns:local="clr-namespace:MainPage"
-             x:Class="TravelingApp481.Views.MainPage">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
+             x:Class="TravelingApp481.Views.MainPage"
+             Title="{Binding Title}"  >
+
+        <StackLayout
                 VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+                HorizontalOptions="CenterAndExpand">
+            <Button 
+                Text="Go to pages"
+                Command="{Binding NavigateToTabContainerCommand}"/>
         </StackLayout>
-    </ContentPage.Content>
 </ContentPage>

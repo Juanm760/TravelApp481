@@ -6,12 +6,39 @@
              xmlns:local="clr-namespace:MainPage"
              x:Class="TravelingApp481.Views.MainPage"
              Title="{Binding Title}"  >
-
-        <StackLayout
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand">
-            <Button 
-                Text="Go to pages"
-                Command="{Binding NavigateToTabContainerCommand}"/>
-        </StackLayout>
-</ContentPage>
+        <Grid
+            Padding="20">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition
+                            Width="*" />
+                <ColumnDefinition
+                            Width="2*" />
+            </Grid.ColumnDefinitions>
+            <Label
+                Grid.Row="2"
+                Grid.Column="0"
+                TextColor="Black"
+                HorizontalTextAlignment="Center"
+                FontAttributes="Bold"
+                Text="Destination :  "
+                FontSize="Medium"/>
+            <Entry
+                Grid.Row="2"
+                Grid.Column="1"
+                BackgroundColor="White"
+                Text="{Binding Address}"
+                Placeholder="Country/City"
+                VerticalOptions="Start" />
+            <Button
+                Grid.Row="4"
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
+                BackgroundColor="LightGray"
+                Margin="0,50,0,0"
+                Command="{Binding NavigateToTabContainerCommand}"
+                Text="Go!" />
+        </Grid>
+ </ContentPage>

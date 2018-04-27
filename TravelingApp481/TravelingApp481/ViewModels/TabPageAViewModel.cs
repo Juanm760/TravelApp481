@@ -28,7 +28,7 @@ namespace TravelingApp481.ViewModels
         public TabPageAViewModel()
         {
             Debug.WriteLine($"**** {this.GetType().Name}.{nameof(TabPageAViewModel)}:  ctor");
-            Title = "TabPageA";
+            Title = "Tourist Spots";
             IsActiveChanged += OnIsActiveChanged;
         }
 

@@ -28,7 +28,7 @@ namespace TravelingApp481.ViewModels
         public TabPageCViewModel()
         {
             Debug.WriteLine($"**** {this.GetType().Name}.{nameof(TabPageCViewModel)}:  ctor");
-            Title = "TabPageC";
+            Title = "Hotels";
             IsActiveChanged += OnIsActiveChanged;
         }
 

@@ -1,16 +1,7 @@
 {
   "version": 3,
   "targets": {
-    "MonoAndroid,Version=v8.1": {
-      "Newtonsoft.Json/11.0.2": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
-        }
-      },
+    "MonoAndroid,Version=v8.0": {
       "Prism.Core/7.0.0.396": {
         "type": "package",
         "compile": {
@@ -354,7 +345,6 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Newtonsoft.Json": "11.0.2",
           "Prism.Unity.Forms": "7.0.0.396",
           "Xamarin.Forms": "2.5.0.280555"
         },
@@ -368,34 +358,6 @@
     }
   },
   "libraries": {
-    "Newtonsoft.Json/11.0.2": {
-      "sha512": "IvJe1pj7JHEsP8B8J8DwlMEx8UInrs/x+9oVY+oCD13jpLu4JbJU2WCIsMRn5C4yW9+DgkaO8uiVE5VHKjpmdQ==",
-      "type": "package",
-      "path": "newtonsoft.json/11.0.2",
-      "files": [
-        "LICENSE.md",
-        "lib/net20/Newtonsoft.Json.dll",
-        "lib/net20/Newtonsoft.Json.xml",
-        "lib/net35/Newtonsoft.Json.dll",
-        "lib/net35/Newtonsoft.Json.xml",
-        "lib/net40/Newtonsoft.Json.dll",
-        "lib/net40/Newtonsoft.Json.xml",
-        "lib/net45/Newtonsoft.Json.dll",
-        "lib/net45/Newtonsoft.Json.xml",
-        "lib/netstandard1.0/Newtonsoft.Json.dll",
-        "lib/netstandard1.0/Newtonsoft.Json.xml",
-        "lib/netstandard1.3/Newtonsoft.Json.dll",
-        "lib/netstandard1.3/Newtonsoft.Json.xml",
-        "lib/netstandard2.0/Newtonsoft.Json.dll",
-        "lib/netstandard2.0/Newtonsoft.Json.xml",
-        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.dll",
-        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.xml",
-        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.dll",
-        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.xml",
-        "newtonsoft.json.11.0.2.nupkg.sha512",
-        "newtonsoft.json.nuspec"
-      ]
-    },
     "Prism.Core/7.0.0.396": {
       "sha512": "XxPmXiA+v/D6zUeAUwSz7GgWNIbzyLLgkP32vDr6fGfv/YPg8CRkmkf+MkP+cxXKdUsqezxXgRRwMUcjWRqWMw==",
       "type": "package",
@@ -912,7 +874,7 @@
     }
   },
   "projectFileDependencyGroups": {
-    "MonoAndroid,Version=v8.1": [
+    "MonoAndroid,Version=v8.0": [
       "Prism.Unity.Forms >= 7.0.0.396",
       "TravelingApp481 >= 1.0.0",
       "Xamarin.Android.Support.Design >= 25.4.0.2",
@@ -924,66 +886,74 @@
     ]
   },
   "packageFolders": {
-    "/Users/denisemunoz/.nuget/packages/": {}
+    "C:\\Users\\llaca\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/denisemunoz/Desktop/TravelApp481/TravelingApp481/TravelingApp481.Android/TravelingApp481.Android.csproj",
+      "projectUniqueName": "C:\\TravelApp481\\TravelingApp481\\TravelingApp481.Android\\TravelingApp481.Android.csproj",
       "projectName": "TravelingApp481.Android",
-      "projectPath": "/Users/denisemunoz/Desktop/TravelApp481/TravelingApp481/TravelingApp481.Android/TravelingApp481.Android.csproj",
-      "packagesPath": "/Users/denisemunoz/.nuget/packages/",
-      "outputPath": "/Users/denisemunoz/Desktop/TravelApp481/TravelingApp481/TravelingApp481.Android/obj",
+      "projectPath": "C:\\TravelApp481\\TravelingApp481\\TravelingApp481.Android\\TravelingApp481.Android.csproj",
+      "packagesPath": "C:\\Users\\llaca\\.nuget\\packages\\",
+      "outputPath": "C:\\TravelApp481\\TravelingApp481\\TravelingApp481.Android\\obj\\",
       "projectStyle": "PackageReference",
+      "skipContentFileWrite": true,
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\"
+      ],
       "configFilePaths": [
-        "/Users/denisemunoz/.config/NuGet/NuGet.Config"
+        "C:\\Users\\llaca\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
       ],
       "originalTargetFrameworks": [
-        "monoandroid81"
+        "monoandroid80"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "monoandroid81": {
+        "monoandroid80": {
           "projectReferences": {
-            "/Users/denisemunoz/Desktop/TravelApp481/TravelingApp481/TravelingApp481/TravelingApp481.csproj": {
-              "projectPath": "/Users/denisemunoz/Desktop/TravelApp481/TravelingApp481/TravelingApp481/TravelingApp481.csproj"
+            "C:\\TravelApp481\\TravelingApp481\\TravelingApp481\\TravelingApp481.csproj": {
+              "projectPath": "C:\\TravelApp481\\TravelingApp481\\TravelingApp481\\TravelingApp481.csproj"
             }
           }
         }
       }
     },
     "frameworks": {
-      "monoandroid81": {
+      "monoandroid80": {
         "dependencies": {
           "Prism.Unity.Forms": {
             "target": "Package",
-            "version": "7.0.0.396"
-          },
-          "Xamarin.Forms": {
-            "target": "Package",
-            "version": "2.5.0.280555"
+            "version": "[7.0.0.396, )"
           },
           "Xamarin.Android.Support.Design": {
             "target": "Package",
-            "version": "25.4.0.2"
-          },
-          "Xamarin.Android.Support.v7.AppCompat": {
-            "target": "Package",
-            "version": "25.4.0.2"
+            "version": "[25.4.0.2, )"
           },
           "Xamarin.Android.Support.v4": {
             "target": "Package",
-            "version": "25.4.0.2"
+            "version": "[25.4.0.2, )"
+          },
+          "Xamarin.Android.Support.v7.AppCompat": {
+            "target": "Package",
+            "version": "[25.4.0.2, )"
           },
           "Xamarin.Android.Support.v7.CardView": {
             "target": "Package",
-            "version": "25.4.0.2"
+            "version": "[25.4.0.2, )"
           },
           "Xamarin.Android.Support.v7.MediaRouter": {
             "target": "Package",
-            "version": "25.4.0.2"
+            "version": "[25.4.0.2, )"
+          },
+          "Xamarin.Forms": {
+            "target": "Package",
+            "version": "[2.5.0.280555, )"
           }
         }
       }
